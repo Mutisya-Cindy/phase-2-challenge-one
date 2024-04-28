@@ -10,7 +10,7 @@ h1 {
   margin-bottom: 20px;
   background-color: rgb(180, 68, 180);
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -64,6 +64,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   margin-top: 10px;
+  width: 300px;
 }
 
 button:hover {
@@ -74,4 +75,31 @@ button:hover {
 select {
   padding: 10px; 
   padding-right: 8px;
+}
+.search-bar input[type="text"] {
+  width: 1300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-bar button {
+  width: 100px; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color:rgb(180, 68, 180) ;
+  
+  cursor: pointer;
+  outline: none;
+}
+input[type="text"] {
+  width: 300px;
+}
+input[type="number"] {
+  width: 300px;
+}
+input[type="date"] {
+  width: 300px;
 }
