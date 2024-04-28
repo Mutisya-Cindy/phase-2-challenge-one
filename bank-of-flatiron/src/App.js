@@ -10,7 +10,7 @@ const App = () => {
 
   const handleAddTransaction = (newTransaction) => {
     setTransactions([...transactions, newTransaction]);
-    setFilteredTransactions([...filteredTransactions, newTransaction]); // Update filteredTransactions too
+    setFilteredTransactions([...filteredTransactions, newTransaction]); 
   };
 
   const handleSearch = (searchTerm) => {
