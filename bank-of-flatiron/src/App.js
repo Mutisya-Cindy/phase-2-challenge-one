@@ -10,6 +10,7 @@ const App = () => {
 
   const handleAddTransaction = (newTransaction) => {
     setTransactions([...transactions, newTransaction]);
+    setFilteredTransactions([...filteredTransactions, newTransaction]); // Update filteredTransactions too
   };
 
   const handleSearch = (searchTerm) => {
@@ -23,7 +24,7 @@ const App = () => {
     <div className="App">
       <h1>The Royal Bank of Flatiron</h1>
       <div className="transaction-form">
-        <TransactionForm onSubmit={handleAddTransaction} />
+        <TransactionForm onSubmit={handleAddTransaction} transactions={transactions} />
       </div>
       <div className="search-bar">
         <SearchBar onSearch={handleSearch} />
@@ -36,4 +37,5 @@ const App = () => {
 };
 
 export default App;
+
 
